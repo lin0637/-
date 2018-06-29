@@ -1,0 +1,83 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Main.master.cs" Inherits="Main" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>无标题页</title>
+    <link href="images/main.css" rel="stylesheet" type="text/css" />
+
+<script language="javascript" type="text/javascript">
+// <!CDATA[
+
+
+
+// ]]>
+</script>
+</head>
+<body>
+    <form id="form1" runat="server">
+     <!--头部开始-->
+<div id="top">
+    &nbsp;<div>
+        <table style="width: 100%">
+            <tr>
+                <td style="font-size: 20pt" >
+                    &nbsp;后台管理</td>
+                <td align="right">
+                    欢迎您:<asp:Label ID="lblUserName" 
+                  runat="server" Text="Label"></asp:Label>&nbsp;&nbsp; 角色:<asp:Label ID="Label3" runat="server"
+                      Text="Label"></asp:Label>
+              &nbsp; 登录时间:<asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>&nbsp;</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!--头部结束-->
+<div>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+        style="height: 590px">
+<tr>
+   <td id="maintable_left" height="300" >
+   <!--左侧树开始-->
+<div id="left">
+		       <div id="left_menu"></div>
+			   <div id="left_tree">
+                   <asp:TreeView ID="TreeView1" runat="server">
+                       <LeafNodeStyle HorizontalPadding="10px" ImageUrl="images/main_14.gif" />
+                   </asp:TreeView>
+                   &nbsp;
+
+			   </div>
+			<div id="tree_down"></div>
+</div>
+
+<!--左侧树结束-->
+
+   
+   </td>
+   <td id="maintable_right" >
+ <!--右侧顶部导航开始-->
+<div id="right_top">
+			        <div id="img" style="height: 12px"><img src="images/close.gif"/>&nbsp;</div>
+			        <span class="imgtext"></span>
+			   <div id="loginout">
+			        <div id="loginoutimg">
+						<img src="images/loginout.gif" width="26" /></div>
+			       <%-- <span class="logintext">--%>
+                   <asp:LinkButton ID="lnkbtnLoginOut" runat="server" onclick="lnkbtnLoginOut_Click" CausesValidation="False" 
+                        >返回前台</asp:LinkButton> 
+                        <%--</span>--%>	 
+			   </div>			   		
+</div>
+<div id="right_font"><img src="images/main_14.gif"/> 您现在所在的位置：
+    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label><span class="bfont"></span></div>
+
+<!--右侧顶部导航结束-->
+    <div>
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,27 @@
+
+.dotted
+{
+	border-bottom: 1px dotted #cccccc;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	font-size:12px;
+}
+.Tbmenuborder1 {
+Border-top-width: 1px;
+Border-right-width: 1px;
+Border-bottom-width: 1px;
+Border-left-width: 1px;
+Border-top-style: Solid;
+Border-right-style: Solid;
+Border-bottom-style: Solid;
+Border-left-style: Solid;
+Border-top-color: #7F9DB9;
+Border-right-color: #7F9DB9;
+Border-bottom-color: #7F9DB9;
+Border-left-color: #7F9DB9;
+}
+.btn
+{
+	BORDER-RIGHT: #2C59AA 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #2C59AA 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 12px; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#C3DAF5); BORDER-LEFT: #2C59AA 1px solid; CURSOR: hand; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #2C59AA 1px solid}
+
+
